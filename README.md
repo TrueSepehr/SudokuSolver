@@ -1,5 +1,19 @@
-# 9*9 SudokuSolver
-The following algorithms and heuristics are used in this project :
+# 9×9 SudokuSolver - Constraint satisfaction problem (CSP)
+A 9×9 Sudoku puzzle could be considered as a CSP with 81 variables and one square is one variable. Obviously, the domains of variables are the digits from 1 to 9. The names of 81 variables could be A1 through A9 for the top row (left to right), down to I1 through I9 for the bottom row. A row, column, or box is called a unit. What’s more, there are 27 different constraints: 9 for row, 9 for column and 9 for 3×3 box :
+
+```
+Alldiff (A1, A2, A3, A4, A5, A6, A7, A8, A9)
+Alldiff (B1, B2, B3, B4, B5, B6, B7, B8, B9)
+. . .
+Alldiff (A1, B1, C1, D1, E1, F1, G1, H1, I1)
+Alldiff (A2, B2, C2, D2, E2, F2, G2, H2, I2)
+. . .
+Alldiff (A1, A2, A3, B1, B2, B3, C1, C2, C3)
+Alldiff (A4, A5, A6, B4, B5, B6, C4, C5, C6)
+. . .
+```
+
+The following algorithms and heuristics are also used in this project :
 - Backtracking
 - MRV Heuristic
 - Degree Heuristic
