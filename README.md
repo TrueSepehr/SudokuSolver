@@ -21,7 +21,7 @@ Input :
 Output :  
 
           Sudoku is Valid. Solving... (or "Sudoku is Invalid! Try again...")
-          "Program run time"
+          "program execution time"
           3 1 6 5 7 8 4 9 2
           5 2 9 1 3 4 7 6 8
           4 8 7 6 2 9 5 3 1
